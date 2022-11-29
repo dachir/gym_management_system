@@ -1,0 +1,31 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-10-16 10:51:38.381964",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "gym_membership"
+ ],
+ "fields": [
+  {
+   "fieldname": "gym_membership",
+   "fieldtype": "Link",
+   "label": "Gym Membership",
+   "options": "Gym Membership"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-10-16 10:52:25.627593",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "Gym Class Booking",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

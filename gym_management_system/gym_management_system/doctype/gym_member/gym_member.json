@@ -12,7 +12,8 @@
   "full_name",
   "email_address",
   "phone",
-  "date_of_birth"
+  "date_of_birth",
+  "age"
  ],
  "fields": [
   {
@@ -32,13 +33,13 @@
    "in_list_view": 1,
    "in_preview": 1,
    "in_standard_filter": 1,
-   "label": "Full Name",
-   "read_only": 1
+   "label": "Full Name"
   },
   {
    "fieldname": "email_address",
    "fieldtype": "Data",
    "label": "Email Address",
+   "options": "Email",
    "reqd": 1,
    "unique": 1
   },
@@ -53,11 +54,16 @@
    "fieldname": "date_of_birth",
    "fieldtype": "Date",
    "label": "Date of Birth"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Float",
+   "label": "Age"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-30 02:46:24.104413",
+ "modified": "2022-11-25 15:21:29.045376",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Gym Member",
@@ -111,6 +117,7 @@
   }
  ],
  "quick_entry": 1,
+ "search_fields": "full_name,email_address,phone",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
