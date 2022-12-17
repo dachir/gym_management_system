@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-11-30 21:13:57.163446",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "gym_day",
+  "start_time",
+  "end_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "gym_day",
+   "fieldtype": "Link",
+   "label": "Gym Day",
+   "options": "Gym Day"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End Time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-11-30 21:13:57.163446",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "Gym Program",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

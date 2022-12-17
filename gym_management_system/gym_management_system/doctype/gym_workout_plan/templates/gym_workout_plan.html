@@ -1,0 +1,15 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+{% set title="{} {} ".format(plan_name,level) %}
+<h3 class="text-center">{{ title }}</h3>
+
+<img class="rounded mx-auto d-block" src="{{ image }}" alt="{{ title }}" title="{{ title }}" width="20%">
+
+<div class="text-center mt-5">
+    <a class="btn btn-primary" href="#"> Book Now </a>
+
+</div>
+{% endblock %}
+
+<!-- this is a sample default web page template -->

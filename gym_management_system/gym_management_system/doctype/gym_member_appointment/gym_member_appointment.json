@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-12-08 06:05:37.411039",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "gym_membership",
+  "full_name",
+  "program",
+  "day",
+  "start_time",
+  "end_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "gym_membership",
+   "fieldtype": "Link",
+   "label": "Gym Membership",
+   "options": "Gym Membership"
+  },
+  {
+   "fetch_from": "gym_membership.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Data",
+   "label": "Program"
+  },
+  {
+   "fieldname": "day",
+   "fieldtype": "Link",
+   "label": "Day",
+   "options": "Gym Day"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End Time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-12-08 06:06:19.801198",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "Gym Member Appointment",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

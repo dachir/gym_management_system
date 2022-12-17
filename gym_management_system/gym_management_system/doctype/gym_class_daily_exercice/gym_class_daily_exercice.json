@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-12-13 10:51:04.068297",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "gym_class",
+  "day",
+  "start_time",
+  "details",
+  "column_break_4",
+  "class_name",
+  "date",
+  "end_time",
+  "description",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "gym_class",
+   "fieldtype": "Link",
+   "label": "Gym Class",
+   "options": "Gym Class"
+  },
+  {
+   "fetch_from": "gym_class.class_name",
+   "fieldname": "class_name",
+   "fieldtype": "Data",
+   "label": "Class Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "day",
+   "fieldtype": "Link",
+   "label": "Day",
+   "options": "Gym Day"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Gym Class Daily Exercice",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Table MultiSelect",
+   "label": "Details",
+   "options": "Gym Class Daily Exercice Details"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End Time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-12-13 11:08:11.607771",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "Gym Class Daily Exercice",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

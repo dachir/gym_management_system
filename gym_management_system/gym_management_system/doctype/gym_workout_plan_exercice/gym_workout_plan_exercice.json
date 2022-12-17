@@ -7,9 +7,12 @@
  "engine": "InnoDB",
  "field_order": [
   "exercice_name",
+  "body_part",
   "series_type",
+  "exercice_serie",
   "value",
-  "description"
+  "description",
+  "machine"
  ],
  "fields": [
   {
@@ -28,7 +31,7 @@
   {
    "fieldname": "series_type",
    "fieldtype": "Select",
-   "label": "Series type",
+   "label": "Type",
    "options": "Time(minutes)\nCount"
   },
   {
@@ -36,12 +39,29 @@
    "fieldtype": "Data",
    "label": "Value",
    "reqd": 1
+  },
+  {
+   "fieldname": "machine",
+   "fieldtype": "Link",
+   "label": "Machine",
+   "options": "Gym Machine"
+  },
+  {
+   "fieldname": "exercice_serie",
+   "fieldtype": "Data",
+   "label": "Serie"
+  },
+  {
+   "fieldname": "body_part",
+   "fieldtype": "Select",
+   "label": "Body Part",
+   "options": "Full Body\nAbs\nChest\nArms\nLegs"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-10-16 10:17:35.467893",
+ "modified": "2022-12-02 09:31:43.020133",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Gym Workout Plan Exercice",

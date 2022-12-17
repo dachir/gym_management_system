@@ -9,9 +9,26 @@
  "field_order": [
   "full_name",
   "address",
+  "column_break_3",
   "mobile",
   "email",
-  "rating"
+  "rating",
+  "section_break_7",
+  "plan_register",
+  "column_break_9",
+  "trainer_availability",
+  "class_register_section",
+  "image",
+  "gym_class",
+  "start_date",
+  "number_of_session",
+  "column_break_13",
+  "class_name",
+  "end_date",
+  "details_tab",
+  "availability_details",
+  "appointments_tab",
+  "member_appointment"
  ],
  "fields": [
   {
@@ -23,7 +40,7 @@
   },
   {
    "fieldname": "address",
-   "fieldtype": "Data",
+   "fieldtype": "Small Text",
    "label": "Address"
   },
   {
@@ -43,11 +60,109 @@
    "fieldname": "rating",
    "fieldtype": "Rating",
    "label": "Rating"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break",
+   "label": "Workout Plan Register"
+  },
+  {
+   "fieldname": "plan_register",
+   "fieldtype": "Table",
+   "label": "Plan Register",
+   "options": "Gym Workout Plan Register"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "class_register_section",
+   "fieldtype": "Section Break",
+   "label": "Class Register"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image"
+  },
+  {
+   "fieldname": "gym_class",
+   "fieldtype": "Link",
+   "label": "Gym Class",
+   "options": "Gym Class"
+  },
+  {
+   "fetch_from": "gym_class.start_date",
+   "fieldname": "start_date",
+   "fieldtype": "Data",
+   "label": "Start Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "gym_class.number_of_session",
+   "fieldname": "number_of_session",
+   "fieldtype": "Data",
+   "label": "Number of Session",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "gym_class.end_date",
+   "fieldname": "end_date",
+   "fieldtype": "Data",
+   "label": "End Date",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "gym_class.class_name",
+   "fieldname": "class_name",
+   "fieldtype": "Data",
+   "label": "Group Class Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "trainer_availability",
+   "fieldtype": "Table",
+   "label": "Trainer Availability",
+   "options": "Gym Trainer Availability"
+  },
+  {
+   "fieldname": "details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "availability_details",
+   "fieldtype": "Table",
+   "label": "Availability Details",
+   "options": "Gym Trainer Availability Details"
+  },
+  {
+   "fieldname": "appointments_tab",
+   "fieldtype": "Tab Break",
+   "label": "Appointments"
+  },
+  {
+   "fieldname": "member_appointment",
+   "fieldtype": "Table",
+   "label": "Member Appointment",
+   "options": "Gym Member Appointment"
   }
  ],
+ "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-11-25 14:11:56.502137",
+ "modified": "2022-12-13 13:42:48.897500",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Gym Trainer",
@@ -63,6 +178,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Admin",
    "share": 1,
    "write": 1
   }

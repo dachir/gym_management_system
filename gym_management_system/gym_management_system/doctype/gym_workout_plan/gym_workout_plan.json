@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
  "autoname": "field:code",
  "creation": "2022-10-16 09:31:04.467595",
@@ -10,8 +11,16 @@
   "code",
   "plan_name",
   "level",
+  "column_break_5",
+  "route",
+  "published",
+  "is_published",
+  "metric_needed",
+  "section_break_8",
   "description",
-  "gym_workout_plan_exercice"
+  "section_break_9",
+  "gym_workout_plan_exercice",
+  "image"
  ],
  "fields": [
   {
@@ -47,11 +56,57 @@
    "fieldtype": "Table",
    "label": "Gym Workout Plan Exercice",
    "options": "Gym Workout Plan Exercice"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Published"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "metric_needed",
+   "fieldtype": "Table",
+   "label": "Metric Needed",
+   "options": "Gym Metric Needed"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Tab Break",
+   "label": "Plan Exercise"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published"
   }
  ],
+ "has_web_view": 1,
+ "image_field": "image",
  "index_web_pages_for_search": 1,
+ "is_published_field": "published",
  "links": [],
- "modified": "2022-10-16 09:55:36.129900",
+ "modified": "2022-12-15 11:08:26.576455",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Gym Workout Plan",
@@ -69,8 +124,33 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Trainer",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Member",
+   "select": 1,
+   "share": 1
   }
  ],
+ "route": "workout_plans",
+ "search_fields": "plan_name,level",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

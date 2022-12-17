@@ -1,0 +1,41 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-12-08 05:30:17.463684",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "gym_metric",
+  "unit"
+ ],
+ "fields": [
+  {
+   "fieldname": "gym_metric",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Gym Metric",
+   "options": "Gym Metric"
+  },
+  {
+   "fetch_from": "gym_metric.unit",
+   "fieldname": "unit",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Unit"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-12-08 05:36:22.969136",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "Gym Metric Used",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

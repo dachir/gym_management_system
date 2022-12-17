@@ -1,0 +1,41 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-12-02 11:47:54.928277",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "gym_machine",
+  "machine_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "gym_machine",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Gym Machine",
+   "options": "Gym Machine"
+  },
+  {
+   "fetch_from": "gym_machine.machine_name",
+   "fieldname": "machine_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Machine Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-12-02 13:33:30.034593",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "Gym Machine Booking",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-12-07 08:34:31.625543",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "workout_plan",
+  "description",
+  "day",
+  "start_time",
+  "end_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "workout_plan",
+   "fieldtype": "Link",
+   "label": "Workout Plan",
+   "options": "Gym Workout Plan"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description",
+   "read_only": 1
+  },
+  {
+   "fieldname": "day",
+   "fieldtype": "Data",
+   "label": "Day"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Date",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Date",
+   "label": "End Time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_virtual": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-12-07 08:34:31.625543",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "Gym Trainer Availability Temp",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

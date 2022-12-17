@@ -1,0 +1,166 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-12-11 20:37:23.475787",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "gym_membership",
+  "full_name",
+  "day",
+  "date",
+  "metrics_submission",
+  "column_break_4",
+  "gym_trainer",
+  "is_personnal",
+  "is_group_class",
+  "group_class",
+  "rating",
+  "amended_from",
+  "route",
+  "is_published"
+ ],
+ "fields": [
+  {
+   "fieldname": "gym_membership",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Gym Membership",
+   "options": "Gym Membership",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "gym_membership.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gym_trainer",
+   "fieldtype": "Link",
+   "label": "Gym Trainer",
+   "options": "Gym Trainer"
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Rating",
+   "label": "Rating"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Gym Member Daily Appointment",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "metrics_submission",
+   "fieldtype": "Table",
+   "label": "Metrics Submission",
+   "options": "Gym Member Metric Submission"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group_class",
+   "fieldtype": "Check",
+   "label": "Is Group Class"
+  },
+  {
+   "fieldname": "group_class",
+   "fieldtype": "Link",
+   "label": "Group Class",
+   "options": "Gym Class",
+   "read_only_depends_on": "eval:doc.is_group_class != 1;"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_personnal",
+   "fieldtype": "Check",
+   "label": "Is Personnal"
+  },
+  {
+   "fieldname": "day",
+   "fieldtype": "Link",
+   "label": "Day",
+   "options": "Gym Day"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-12-15 21:34:45.949000",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "Gym Member Daily Appointment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Admin",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Member",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "route": "daily_appointments",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

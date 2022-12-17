@@ -13,8 +13,13 @@
   "column_break_4",
   "amount",
   "end_date",
+  "metric_needed",
   "section_break_9",
-  "description"
+  "description",
+  "program_tab",
+  "gym_program",
+  "class_exercise_tab",
+  "gym_class_exercice"
  ],
  "fields": [
   {
@@ -57,11 +62,39 @@
   {
    "fieldname": "section_break_9",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "program_tab",
+   "fieldtype": "Column Break",
+   "label": "Program"
+  },
+  {
+   "fieldname": "gym_program",
+   "fieldtype": "Table",
+   "label": "Gym Program",
+   "options": "Gym Program"
+  },
+  {
+   "fieldname": "class_exercise_tab",
+   "fieldtype": "Tab Break",
+   "label": "Class Exercise"
+  },
+  {
+   "fieldname": "gym_class_exercice",
+   "fieldtype": "Table",
+   "label": "Gym Class Exercice",
+   "options": "Gym Workout Plan Exercice"
+  },
+  {
+   "fieldname": "metric_needed",
+   "fieldtype": "Table",
+   "label": "Metric Needed",
+   "options": "Gym Metric Needed"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-11-29 06:20:17.580521",
+ "modified": "2022-12-13 10:17:24.921977",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Gym Class",
@@ -81,6 +114,7 @@
    "write": 1
   }
  ],
+ "search_fields": "class_name",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

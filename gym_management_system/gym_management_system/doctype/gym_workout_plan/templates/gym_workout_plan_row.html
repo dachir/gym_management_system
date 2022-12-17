@@ -1,0 +1,11 @@
+{% set title="{} {} ".format(plan_name,level) %}
+<div>
+	<div class="card" style="width: 18rem;">
+		<img class="card-img-top" src="{{ doc.image }}" alt="Card Image cap">
+		<div class="card-body">
+			<h5 class="card-title">{{ title }}</h5>
+			<p class="card-text">{{doc.description ~ '...'}} </p>
+			<a href="/workout_plans/{{ doc.name.lower() }}" class="card-text">The fastest. The best </a>
+		</div>
+	</div>
+</div>

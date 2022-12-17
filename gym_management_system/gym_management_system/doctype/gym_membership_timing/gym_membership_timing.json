@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-12-02 13:48:59.551777",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "gym_day",
+  "start_time",
+  "end_time",
+  "gym_trainer",
+  "class_type",
+  "class",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "gym_day",
+   "fieldtype": "Link",
+   "label": "Gym Day",
+   "options": "Gym Day"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End Time"
+  },
+  {
+   "fieldname": "gym_trainer",
+   "fieldtype": "Link",
+   "label": "Gym Trainer",
+   "options": "Gym Trainer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "class_type",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Class Type",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "class",
+   "fieldtype": "Dynamic Link",
+   "hidden": 1,
+   "label": "Class",
+   "options": "class_type"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-12-08 05:14:36.993829",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "Gym Membership Timing",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

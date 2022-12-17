@@ -15,7 +15,12 @@
   "membership_type",
   "amount_paid",
   "has_expired",
-  "amended_from"
+  "amended_from",
+  "section_break_10",
+  "gym_machine_booking",
+  "metric_used",
+  "special_booking_section",
+  "timing"
  ],
  "fields": [
   {
@@ -77,12 +82,40 @@
   {
    "fieldname": "column_break_2",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break",
+   "label": "Booking"
+  },
+  {
+   "fieldname": "gym_machine_booking",
+   "fieldtype": "Table MultiSelect",
+   "label": "Machine Used",
+   "options": "Gym Machine Booking"
+  },
+  {
+   "fieldname": "timing",
+   "fieldtype": "Table",
+   "label": "Timing",
+   "options": "Gym Membership Timing"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "special_booking_section",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "metric_used",
+   "fieldtype": "Table MultiSelect",
+   "label": "Metric Used",
+   "options": "Gym Metric Used"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-11-25 10:44:28.719402",
+ "modified": "2022-12-08 05:32:40.880096",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Gym Membership",

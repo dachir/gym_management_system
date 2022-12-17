@@ -1,0 +1,40 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-11-29 20:44:16.828579",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "metric",
+  "unit"
+ ],
+ "fields": [
+  {
+   "fieldname": "metric",
+   "fieldtype": "Link",
+   "label": "Metric",
+   "options": "Gym Metric"
+  },
+  {
+   "fetch_from": "metric.unit",
+   "fieldname": "unit",
+   "fieldtype": "Data",
+   "label": "Unit",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-11-29 20:44:48.992059",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "Gym Metric Needed",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -8,7 +8,8 @@
  "engine": "InnoDB",
  "field_order": [
   "exercice_name",
-  "description"
+  "description",
+  "image"
  ],
  "fields": [
   {
@@ -23,11 +24,18 @@
    "label": "Exercice Name",
    "reqd": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image"
   }
  ],
+ "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-10-16 10:06:36.544839",
+ "modified": "2022-12-02 09:32:36.951659",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Gym Exercice",
@@ -45,6 +53,41 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Trainer",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Member",
+   "select": 1,
+   "share": 1
   }
  ],
  "sort_field": "modified",

@@ -30,7 +30,7 @@ class GymLockerBooking(Document):
 		locker = frappe.get_doc("Gym Locker", self.gym_locker)
 		# locker cannot be issued if it is already issued
 		if locker.satus == "Issued":
-			frappe.throw("Locker is already issued by another member")
+			frappe.throw("Locker is already issued to another member")
 
 	def validate_return(self):
 		locker = frappe.get_doc("Gym Locker", self.gym_locker)

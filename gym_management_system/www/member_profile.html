@@ -1,0 +1,51 @@
+{% extends "templates/web.html" %}
+
+{% block title %}{{ _("Member Profile") }}{% endblock %}
+
+{% block page_content %}
+<h1>{{ _("Member Profile") }}</h1>
+
+<table class="table table-borderless">
+    <tbody>
+      <tr>
+        <th scope="row"></th>
+        <td>Membership Number : </td>
+        <td>{{active_plan.membership}}</td>
+        <td>Category: </td>
+        <td>{{active_plan.membership_type}}</td>
+      </tr>
+
+      <tr>
+        <th scope="row"></th>
+        <td>Start Date : </td>
+        <td>{{active_plan.from_date}}</td>
+        <td>End Date : </td>
+        <td>{{active_plan.to_date}}</td>
+      </tr>
+
+      <tr>
+        <th scope="row"></th>
+        <td>Remaining Days : </td>
+        <td>{{active_plan.remaining_days}}</td>
+        <td>Trainers : </td>
+        <td>{{active_plan.trainers}}</td>
+      </tr>
+    </tbody>
+</table>
+<h3>{{ _("Past plans") }}</h3>
+<div class="row">
+	{%- for plan in past_plans -%}
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{ plan.membership }} {{ plan.membership_type }}</h5>
+                    <p class="card-text">
+                        <div>from {{ plan.from_date }} to {{ plan.to_date }}</div>
+                        <div>trainers: {{ plan.trainers }} </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
