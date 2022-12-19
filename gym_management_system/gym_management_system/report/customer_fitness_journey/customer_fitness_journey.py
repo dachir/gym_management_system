@@ -32,7 +32,7 @@ def execute(filters=None):
 		ORDER BY YEAR(a.date),MONTH(a.date), a.gym_membership, m.gym_metric
 		""", as_dict = 1
 	)
-    frappe.msgprint("<span style='color:Red;'>Once this popup has served it's purpose, then comment out it's invocation, viz. #frappe.msgprint...</span><br><br>" + "<pre>{}</pre>".format(frappe.as_json(data)))
+    #frappe.msgprint("<span style='color:Red;'>Once this popup has served it's purpose, then comment out it's invocation, viz. #frappe.msgprint...</span><br><br>" + "<pre>{}</pre>".format(frappe.as_json(data)))
     #datefilter = datetime.datetime.strptime(filters.date_filter,"%Y-%m-%d").date()
     #today = datetime.datetime.now(tz=None).date()
     #data = [dic for dic in data if dic.creation.date() > datefilter]
